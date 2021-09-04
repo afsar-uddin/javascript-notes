@@ -12,16 +12,17 @@ h1,h2,h3,p,ul {
 }
 li{
     list-style: none;
+    display: inline-block;
 }
 header,
-footer {
+.summary {
     text-align: center;
     padding: 30px 15px;
     background-color: #ddd;
     margin-bottom: 15px;
     border-radius: 5px;
 }
-footer {
+.summary {
     margin-bottom: 0;
 }
 section {

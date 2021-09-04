@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <a class="back2home" href="index.html">Back to home</a>
+        <section class="posts">
+            <header>
+                <h2>fetch()</h2>
+            </header>
+            <div class="definition">
+                <strong>Definition</strong>
+                <p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP
+                    pipeline, such as requests and responses. It also provides a global fetch() method that provides an
+                    easy, logical way to fetch resources asynchronously across the network.</p>
+            </div>
+            <div class="code">
+                <pre>
+<code>
+fetch('http://example.com/movies.json')
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+</code>
+                </pre>
+            </div>
+        </section>
+        <section class="summary">
+            <b>Summary: fetch() works as asynchronously</b>
+        </section>
+    </main>
+</body>
+
+</html>
