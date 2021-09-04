@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <a class="back2home" href="index.html">Back to home</a>
+        <section class="posts">
+            <header>
+                <h2>setTimeOut()</h2>
+            </header>
+            <div class="definition">
+                <strong>Definition</strong>
+                <p>1) The <b>setTimeout()</b> method calls a function or evaluates an expression after a specified
+                    number of
+                    milliseconds.
+                </p>
+                <p>2) The global <b>setTimeout()</b> method sets a timer which executes a function or specified piece of
+                    code
+                    once the timer expires.</p>
+            </div>
+            <div class="code">
+                <pre>
+<code>
+function doSomething() {
+    console.log('I am coding JavaScript');
+}
+setTimeout(doSomething, 6000);
+</code>
+<code>
+    console.log('First: ami sobar age');
+</code>
+<code>
+    setTimeout(function () {
+        console.log('I am using VS Code');
+    }, 5000);
+</code>
+<code>
+setTimeout(() => {
+    console.log('Exploring MDN articles');
+}, 4000);
+</code>
+<code>
+    console.log('Last: ami 3 number baccha');
+</code>
+                </pre>
+            </div>
+        </section>
+        <footer>
+            <b>Summary:</b> If a function call using setTimeout() method, that function execute asynchronously.
+        </footer>
+    </main>
+</body>
+
+</html>
