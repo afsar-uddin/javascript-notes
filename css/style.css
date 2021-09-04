@@ -24,6 +24,7 @@ header,
 }
 .summary {
     margin-bottom: 0;
+    text-align: left;
 }
 section {
     margin-bottom: 45px;
@@ -46,6 +47,7 @@ ul li a,
     background-color: #ddd;
     padding: 30px;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 .definition p {
     margin-bottom: 15px;
@@ -67,4 +69,20 @@ code {
     background-color: #313131;
     color: #f9f9f9;
     margin: 7.5px;
+}
+h3 {
+    margin-bottom: 15px;
+}
+/* table style */
+table tr th:last-child, 
+table tr td:last-child {
+    text-align: right;
+}
+table td, table th {
+    border: 1px solid #f9f9f9;
+    padding: 10px;
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
 }

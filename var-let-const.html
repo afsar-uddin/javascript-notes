@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var, let & const</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <a class="back2home" href="index.html">Back to home</a>
+        <section class="posts">
+            <header>
+                <h2>Use of var, let & const</h2>
+            </header>
+            <div class="definition">
+                <strong>Definition</strong>
+                <p><b>var</b> var is used for variable declaration and it's global scoped variable. var is defined
+                    throughout the function but not if it's declared in a block as it's not block-scoped.
+                    <b>On the other hand, hoisting is a JavaScript mechanism where variables and function declarations
+                        are moved to the top
+                        of their scope before code execution.
+                    </b>
+                </p>
+                <p><b>let</b> let statement is block-scoped and not a global scope. This statement can be used in
+                    function as it is function-scoped and one of the main character of <b>let</b> statement is that it
+                    can be reassigned.</p>
+                <p><b>const</b> To declare varibles with the <b>const</b> maintain constant values, which cannt
+                    reassigned. <b>const</b> declarations can only be accessed within the block they were declared.</p>
+            </div>
+        </section>
+        <section class="summary">
+            <b>Summary: </b> <br>
+            <p>1) <b>var</b> declaration are globally scoped or function scoped while <b>let</b> and <b>const</b> are
+                block scoped</p>
+            <p>2) <b>var</b> varibales can be updated and re-declared within it's scope; <b>let</b> variables can be
+                updated but not re-declared; <b>const</b> variables can neither be updated nor re-declared.</p>
+            <p>3) They are all hoisted to the top of their scope. But while <b>var</b> variables are initialized with
+                <b>undefined</b>, <b>let</b> and <b>const</b> variables are not initialized.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
