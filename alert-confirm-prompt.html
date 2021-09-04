@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subject</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <a class="back2home" href="index.html">Back to home</a>
+        <section class="posts">
+            <header>
+                <h2>alert(), confirm() and prompt() Box</h2>
+            </header>
+            <div class="definition">
+                <strong>Definition</strong>
+                <p>An <b>alert</b> box is often used if you want to make sure information comes through to the user.
+                    <br>
+                    When an <b>alert</b> box pops up, the user will have to click "OK" to proceed.
+                </p>
+                <pre>
+alert("I am an alert box!");
+</pre>
+                <hr>
+                <p>
+                    A <b>confirm</b> box is often used if you want the user to verify or accept something. <br> <br>
+
+                    When a <b>confirm</b> box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+                    <br> <br>
+
+                    If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+                </p>
+                <pre>
+if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+} else {
+   txt = "You pressed Cancel!";
+}
+</pre>
+                <hr>
+                <p>A <b>prompt</b> box is often used if you want the user to input a value before entering a page.
+                    <br><br>
+
+                    When a <b>prompt</b> box pops up, the user will have to click either "OK" or "Cancel" to proceed
+                    after entering an input value.<br><br>
+
+                    If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns
+                    null.
+                </p>
+                <pre>
+let person = prompt("Please enter your name", "Harry Potter");
+let text;
+if (person == null || person == "") {
+  text = "User cancelled the prompt.";
+} else {
+  text = "Hello " + person + "! How are you today?";
+}
+</pre>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
