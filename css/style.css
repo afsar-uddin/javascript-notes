@@ -25,6 +25,9 @@ header,
     margin-bottom: 15px;
     border-radius: 5px;
 }
+header h2 {
+    text-transform: capitalize;
+}
 .summary {
     margin-bottom: 0;
     text-align: left;
@@ -61,7 +64,6 @@ ul li a,
 .definition pre {
     background-color: #f3f0f0;
     padding: 30px;
-    display: inline-block;
     border-radius: 5px;
 }
 strong {

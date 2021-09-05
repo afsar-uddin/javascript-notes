@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <a class="back2home" href="index.html">Back to home</a>
+        <section class="posts">
+            <header>
+                <h2>cookies</h2>
+            </header>
+            <div class="definition">
+                <strong>Definition</strong>
+                <p>An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the
+                    user's web browser. The browser may store it and send it back with later requests to the same
+                    server. Typically, it is used to tell if two requests came from the same browser — keeping a user
+                    logged-in, for example. It remembers stateful information for the stateless HTTP protocol.</p>
+                <p><b>Cookies are mainly used for three purposes:
+                    </b> <br><br>
+                    <b>1) Session management
+                    </b> Logins, shopping carts, game scores, or anything else the server should remember <br><br>
+                    <b>2) Personalization
+                    </b> User preferences, themes, and other settings <br><br>
+                    <b>3) Tracking</b> Recording and analyzing user behavior
+                </p>
+                <b>Hints</b>
+                <pre>document.cookie</pre>
+                <pre>document.cookie.split('; ')</pre>
+                <pre>document.cookie.split('; ').map(c => console.log(c))</pre>
+                <pre>document.cookie.split('; ').map(c => console.log(c.split('=')))</pre>
+                <pre>document.cookie.split('; ').find(c=> c.includes('PREF'))</pre>
+                <b>Full example</b>
+                <pre>
+const getCookie = name => {
+    const cookie = document.cookie;
+    const allCookie = cookie.split('; ');
+    const findCookie = allCookie.find(c => c.includes(name));
+    if (findCookie) {
+        'country=US'
+        const cookieNameValue = findCookie.split('=');
+        return cookieNameValue[1];
+    }
+}
+                </pre>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
